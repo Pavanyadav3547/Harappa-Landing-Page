@@ -1,0 +1,577 @@
+:root{
+  
+    --blue-color: #315798;
+    --white-color: #ffffff;
+    --red-color:#e30016;
+    --transition: all .4s ease-in-out;
+    --border: 1px solid #eee;
+}
+
+
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+
+html{
+    font-size: 100%;
+    /*overflow-x: hidden;*/
+}
+
+
+body{
+   font-family: 'Montserrat', sans-serif;
+    line-height: 1.6em;
+    color: #565a5c;
+    /*overflow-x: hidden;*/
+}
+/* ==========================================================================
+  Navigation Section
+   ========================================================================== */
+header {
+    background: linear-gradient(rgba(233, 199, 76, 0), rgba(233, 199, 76, 0)) ,url(../img/main-banner.jpg) center no-repeat;
+    height: 100vh;
+    background-size: cover;
+	position:relative;
+}
+.logo{
+    width: 250px;
+}
+.main-nav{
+    height: 200px;
+}
+.hero-text{
+    /*position: absolute;*/
+    /*top: 50%;*/
+    /*left: 25%;*/
+    /*transform: translate(-50%, -50%);*/
+    color: var(--blue-color);
+    text-align: left;
+}
+.carousel-caption{
+    top: 8%;
+    left: 10%;
+    bottom: auto;
+}
+.box-main-banner{
+    text-align: left;
+    justify-content: left;
+    margin-bottom: 5rem;
+    padding: 0rem;
+}
+
+.carousel-fade .carousel-inner .item {
+    opacity: 0;
+    -webkit-transition-property: opacity;
+    -moz-transition-property: opacity;
+    -o-transition-property: opacity;
+    transition-property: opacity;
+}
+.carousel-fade .carousel-inner .active {
+    opacity: 1;
+}
+.free-trial-btn{
+    position: fixed;
+    right: 0;
+    background: #355699;
+    width: auto;
+    z-index: 9999999;
+    top: 90%;
+    text-align: center;
+    color: #fff;
+    font-weight: 600;
+    cursor: pointer;
+    text-transform: uppercase
+}
+.hero-text h1{
+    font-weight: 700;
+    position: relative;
+    font-size: 1.5em;
+}
+.hero-text p{
+    font-size: 1.4rem;
+    margin-bottom: 0rem;
+    padding: 1rem 0rem 2rem 0rem;
+}
+.buy-btn{
+    background: #355699;
+    color: #fff;
+    text-decoration: none;
+    padding: 14px 14px;
+    font-family: Montserrat;
+    font-size: 14px;
+    line-height: 38px;
+    border-radius: 0;
+    -moz-border-radius: 0;
+    -webkit-border-radius: 0;
+    text-transform: uppercase;
+
+}
+.buy-btn:hover{
+    color: #ffffff;
+    text-decoration: none;
+}
+.t-btn{
+    font-weight: 600;
+}
+.banner-btn{
+    background-color: #ffffff;
+    color:#355699;
+    border: 1px solid #355699;
+    line-height: 18px;
+}
+.banner-btn:hover{
+   text-decoration: none;
+    color: #ffffff;
+    background-color: #355699;
+}
+.custom-arrow{
+    font-size: 2rem;
+    color: #4164a0;
+}
+.carousel-control-next:focus, .carousel-control-next:hover, .carousel-control-prev:focus, .carousel-control-prev:hover{
+    opacity: 1 !important;
+}
+.carousel-control-next, .carousel-control-prev{
+    opacity: 1 !important;
+}
+.left-btn{
+    margin-left: 1rem;
+}
+.carousel-indicators li{
+  background-color: #4164a0;
+}
+.strikediag {
+    display: inline-block;
+    position: relative;
+    font-weight: 600;
+    margin-left: 2rem;
+}
+.strikediag::before {
+    content: '';
+    position: absolute;
+    left: -0.1em;
+    right: -0.1em;
+    top: 0.38em;
+    bottom: 0.38em;
+    background: linear-gradient(to left top, transparent 45.5%, currentColor 47.5%, currentColor 52.5%, transparent 54.5%);
+    pointer-events: none;
+}
+@media screen and (min-width: 768px) {
+
+    .hero-text h1{
+        font-size: 2.5em;
+    }
+
+}
+@media screen and (max-width: 600px) {
+    .logo{
+        width: 150px;
+    }
+    .box-main-banner{
+        margin-bottom: 1.5rem;
+    }
+    .carousel-caption{
+        top: 1%;
+        left: 10%;
+        bottom: auto;
+    }
+    .main-nav {
+        height: 95px;
+    }
+    .hero-text p{
+        font-size: 1.0rem;
+        padding: 0.5rem 0rem 0.5rem 0rem;
+        line-height: 16px;
+    }
+    .hero-text p br{
+        display: none;
+    }
+    .hero-text h1 {
+        margin-bottom: 0rem;
+    }
+    .buy-btn{
+        padding: 10px 10px;
+        font-size: 12px;
+    }
+    .banner-btn{
+        padding: 5px 5px;
+        font-size: 12px;
+    }
+    .carousel-control-next, .carousel-control-prev {
+        display: none;
+    }
+    .strikediag {
+        display: inline-block;
+        position: relative;
+        font-weight: 500;
+        font-size: 12px;
+    }
+}
+/* ==========================================================================
+  About Section
+   ========================================================================== */
+.about{
+    padding: 5rem 0rem;
+}
+.custom-title{
+    text-transform: uppercase;
+    font-weight: 700;
+    color: #355699;
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+}
+
+.video-wrapper {
+    position: relative;
+    margin-top: -6rem;
+
+}
+
+.video-wrapper > video {
+    width: 100%;
+    vertical-align: middle;
+}
+
+.video-wrapper > video.has-media-controls-hidden::-webkit-media-controls {
+    display: none;
+}
+
+.video-overlay-play-button {
+    box-sizing: border-box;
+    width: 100%;
+    height: 100%;
+    padding: 10px calc(50% - 50px);
+    position: absolute;
+    top: 7px;
+    left: -18px;
+    display: block;
+    opacity: 0.95;
+    cursor: pointer;
+    background-image: linear-gradient(transparent, rgba(255, 255, 255, 0));
+    transition: opacity 150ms;
+}
+.video-overlay-play-button polygon:hover{
+    fill: #355699;
+}
+.video-overlay-play-button:hover {
+    opacity: 1;
+}
+
+.video-overlay-play-button.is-hidden {
+    display: none;
+}
+@media screen and (max-width: 600px) {
+    .video-wrapper {
+
+        margin-top: 0rem;
+
+    }
+
+}
+/* ==========================================================================
+  R Section
+   ========================================================================== */
+.r-success{
+    padding: 5rem 0rem;
+    background-color: #e6c64f;
+}
+.center{
+    text-align: center;
+}
+.r-box{
+    padding: 25px 13px;
+}
+
+.preview-image{
+    text-align: center;
+    padding: 1rem;
+}
+.preview-image img{
+    object-fit: contain;
+    height: 210px;
+    width: auto;
+    margin: auto;
+}
+.preview-info{
+    text-align: center;
+    padding: 1rem;
+}
+.heading-box{
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: #3e5e9d;
+    text-transform: uppercase;
+}
+.add-c-btn{
+    background-color: #3e5e9d;
+    color: #fff;
+    padding: 1rem;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    text-transform: uppercase;
+}
+.add-course-btn{
+    text-align: left;
+    color: #3e5e9d;
+    background-color: #ffffff;
+    padding: 0.5rem;
+    font-size: 0.9rem;
+    font-weight: 500;
+    border-radius: 10px;
+}
+.add-course-btn a{
+    color: #3e5e9d;
+}
+.add-course-btn a:hover{
+    text-decoration: none;
+    color: #3e5e9d;
+}
+.price-cart{
+    float: right;
+    font-weight: 500;
+}
+.r-box-info{
+    background-color: #ffffff;
+    border-radius: 10px;
+    -webkit-box-shadow: 0 0 30px rgba(0,0,0,.1);
+}
+.full-package-btn{
+    padding: 2.2rem 0rem;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    font-weight: 500;
+}
+@media screen and (max-width: 600px) {
+
+    .custom-title {
+        font-size: 2.0rem;
+        text-align: center;
+    }
+    .custom-title br{
+        display: none;
+    }
+}
+/* ==========================================================================
+  R Section
+   ========================================================================== */
+.p-adv{
+    padding: 5rem 0rem;
+    background: url('../img/impact_bg.jpg') 0 0/cover no-repeat;
+}
+.p-adv ul {
+    margin: 45px -15px 0;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0;
+    justify-content: center;
+}
+.p-adv ul li {
+    text-align: left;
+    list-style: none;
+    padding: 0 25px;
+    display: inline-block;
+    width: 30%;
+    margin-bottom: 30px;
+}
+
+.p-adv ul li .numberItem {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.numberItem {
+    background: #fff;
+    padding: 30px 30px 50px;
+    box-shadow: 0 0 40px rgba(0,0,0,.1);
+    -moz-box-shadow: 0 0 40px rgba(0,0,0,.1);
+    -webkit-box-shadow: 0 0 40px rgba(0,0,0,.1);
+}
+.numberItem span {
+    display: block;
+    font-family: Montserrat;
+    font-size: 2.5rem;
+    line-height: 32px;
+    color: #e8c74c;
+    margin-bottom: 15px;
+    font-weight: 500;
+}
+.numberItem label {
+    font-family: Montserrat;
+    font-size: 18px;
+    color: #355699;
+    margin-bottom: 10px;
+    font-weight: 500;
+}
+.numberItem p {
+    font-family: "Montserrat Light";
+    font-size: 16px;
+    color: #848484;
+    line-height: 23px;
+}
+@media screen and (max-width: 600px) {
+
+    .p-adv ul li{
+        width: 100%;
+    }
+}
+/* ==========================================================================
+  R Section
+   ========================================================================== */
+.r-family{
+    padding: 5rem 0rem;
+}
+.image img{
+    width: 60%;
+    margin: auto;
+}
+.r-family .info{
+    text-align: center;
+    padding: 1.5rem;
+}
+.rock{
+    margin-top: 3rem;
+}
+@media screen and (max-width: 600px) {
+
+    .learner-speak .info{
+        color: #ffffff;
+        padding: 2rem 1rem;
+        text-align: center;
+    }
+    .slick-prev{
+
+        left: 1rem !important;
+        z-index: 100000;
+        top: 40% !important;
+    }
+    .slick-next{
+        right: 1rem !important;
+        z-index: 100000;
+        top: 40% !important;
+    }
+    .rock{
+        margin-top: 0rem;
+    }
+}
+/* ==========================================================================
+  Learner Speak
+   ========================================================================== */
+.learner-speak{
+    padding: 5rem 0rem;
+    background: url('../img/learner-speak.jpg') 0 0/cover no-repeat;
+}
+.speak-learner-content{
+    display: flex;
+    align-items: center;
+    justify-content: left;
+}
+.learner-speak .info{
+    color: #ffffff;
+}
+.speak .slick-prev:before, .speak .slick-next:before{
+    color: #ffffff !important;
+}
+/* ==========================================================================
+  Call Request
+   ========================================================================== */
+.call-request{
+
+    background: #e6c64f;
+    padding: 1rem;
+}
+.custom-title-call{
+    text-transform: uppercase;
+    font-weight: 700;
+    color: #355699;
+    font-size: 2.0rem;
+    text-align: left;
+    margin-bottom: 0rem;
+}
+.formBox {
+    padding: 0px 50px 0px 50px;
+}
+
+.formBox h1 {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    margin-bottom: 50px;
+    text-transform: uppercase;
+    font-size: 48px;
+}
+
+.inputBox {
+    position: relative;
+    box-sizing: border-box;
+    margin-bottom: 20px;
+}
+
+.inputBox .inputText {
+    position: absolute;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 50px;
+    transition: .5s;
+    opacity: .8;
+    color: #355699;
+}
+
+input::placeholder {
+    color: #355699;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+
+.email-footer input::placeholder {
+    color: #000000;
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+.inputBox .input {
+    position: relative;
+    width: 100%;
+    height: 50px;
+    background: transparent;
+    border: none;
+    outline: none;
+    font-size: 20px;
+    border-bottom: 1px solid #355699;
+
+}
+
+.focus .inputText {
+    transform: translateY(-30px);
+    font-size: 18px;
+    opacity: 1;
+    color: #00bcd4;
+
+}
+@media screen and (max-width: 600px) {
+    .custom-title-call{
+        text-align: center;
+    }
+}
+/* ==========================================================================
+ Footer
+   ========================================================================== */
+.footer{
+
+    background: #355699;
+    padding: 1rem;
+}
+.btn-send{
+    border: none;
+    color: #ffffff;
+    padding: 9px 24px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-weight: 500;
+    font-size: 16px;
+    margin: 6px 2px;
+    background-color: #385798;
+    cursor: pointer;
+}
